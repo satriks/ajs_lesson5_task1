@@ -9,7 +9,7 @@ export default class Character {
       'Zombie',
     ];
 
-    if (name.length > 2 && name.length <= 10) {
+    if (name.length >= 2 && name.length <= 10) {
       this.name = name;
     } else { throw new Error('Имя должно быть от 2 до 10 символов'); }
     if (types.includes(type)) {

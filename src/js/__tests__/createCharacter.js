@@ -13,8 +13,8 @@ test('Char test', () => {
 });
 
 test('Char name Error', () => {
-  expect(() => new Character('42', '42')).toThrow(Error('Имя должно быть от 2 до 10 символов'));
+  expect(() => new Character('4', '42')).toThrow(Error('Имя должно быть от 2 до 10 символов'));
 });
 test('Char class Error', () => {
-  expect(() => new Character('424', '42')).toThrow(Error('Не верный класс персонажа'));
+  expect(() => new Character('42', '42')).toThrow(Error('Не верный класс персонажа'));
 });
