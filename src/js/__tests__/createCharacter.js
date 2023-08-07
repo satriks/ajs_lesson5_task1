@@ -8,7 +8,6 @@ test('Char test', () => {
     health: 100,
     level: 1,
     name: 'test1',
-    type: 'Bowerman',
   });
 });
 
