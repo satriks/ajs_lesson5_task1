@@ -14,6 +14,12 @@ test('Char test', () => {
 test('Char name Error', () => {
   expect(() => new Character('4', '42')).toThrow(Error('Имя должно быть от 2 до 10 символов'));
 });
+
 test('Char class Error', () => {
   expect(() => new Character('42', '42')).toThrow(Error('Не верный класс персонажа'));
+});
+
+test('test get class ', () => {
+  const char = new Character('test', 'Daemon');
+  expect(char.getType()).toBe('Daemon');
 });
