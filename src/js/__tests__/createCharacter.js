@@ -21,5 +21,5 @@ test('Char class Error', () => {
 
 test('test get class ', () => {
   const char = new Character('test', 'Daemon');
-  expect(char.getType()).toBe('Daemon');
+  expect(char.getType).toBe('Daemon');
 });
